@@ -12,7 +12,6 @@
       "class": "c-breakpoint__item--xsmall"
     }
   ],
-  "label": "This is a label",
   "labelRequired": "This is a label <span>(required)</span>",
   "inputName": "pl-input",
   "placeholder": "This is an input",
