@@ -1,0 +1,31 @@
+<?php
+  $__attributes = $this->htmlAttributes($attributes ?? []);
+  if (isset($btnClass)) {
+    $__attributes['data-btn-class'] = $btnClass;
+  }
+  if (isset($element)) {
+    $__attributes['data-element'] = $element;
+  }
+  if (isset($inPlaceToggle)) {
+    $__attributes['data-in-place-toggle'] = $inPlaceToggle;
+  }
+  if (isset($label)) {
+    $__attributes['data-label'] = $label;
+  }
+  if (isset($lessLabel)) {
+    $__attributes['less-label'] = $lessLabel;
+  }
+  if (isset($moreLabel)) {
+    $__attributes['more-label'] = $moreLabel;
+  }
+  if (isset($rows)) {
+    $__attributes['data-rows'] = $rows;
+  }
+  if (isset($topToggle)) {
+    $__attributes['data-top-toggle'] = $topToggle;
+  }
+?>
+<div<?= $__attributes->add('class', 'finna-truncate') ?>>
+  <?= $content ?? '' ?>
+</div>
+<?php $this->headScript()->appendFile('components/molecules/containers/finna-truncate/finna-truncate.js'); ?>
