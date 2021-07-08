@@ -1,0 +1,10 @@
+<?php
+  $__attributes = $this->htmlAttributes($attributes ?? []);
+  $__attributes->set([
+    'aria-busy' => 'true',
+    'aria-live' => 'polite'
+  ]);
+?>
+<div<?= $__attributes->add('class', 'finna-spinner') ?>>
+  <i class="fa fa-spin fa-spinner" aria-hidden="true"></i>
+</div>

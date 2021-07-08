@@ -2,12 +2,16 @@
   <?php if (isset($widgetHeading)) : ?>
     <h2><?= $widgetHeading; ?></h2>
   <?php endif; ?>
-  <?= $this->render('components/atoms/messaging/loader/loader.phtml', ['wrapperClass' => 'loader js-inital-loader']); ?>
+  <?= $this->render('components/molecules/messages/finna-spinner/finna-spinner.phtml', [
+      'attributes' => ['class' => ['loader', 'js-inital-loader']]
+    ]); ?>
   <div class="js-hidden-initally hide">
     <div class="info-col">
       <?= $this->render('components/molecules/scheduling/service-point-schedule/service-point-schedule.phtml', ['organisation' => $organisation, 'servicePointId' => $servicePointId, 'previousWeekLabel' => $previousWeekLabel, 'weekText' => $weekText, 'nextWeekLabel' => $nextWeekLabel, 'informationNotAvailableText' => $informationNotAvailableText, 'wrapperClass' => $scheduleWrapperClass, 'staffAvailableText' => $staffAvailableText, 'selfServiceText' => $selfServiceText, 'openText' => $openText, 'closedText' => $closedText, 'dropdownFallbackLabel' => $dropdownFallbackLabel, 'showControls' => true, 'weekNaviStatusText' => $weekNaviStatusText, 'dropdownStatusText' => $dropdownStatusText]) ?>
     </div>
-    <?= $this->render('components/atoms/messaging/loader/loader.phtml', ['wrapperClass' => 'loader js-details-loader']); ?>
+    <?= $this->render('components/molecules/messages/finna-spinner/finna-spinner.phtml', [
+        'attributes' => ['class' => ['loader', 'js-details-loader']]
+      ]); ?>
     <div class="details-col js-details-colum">
       <a href="" data-href="<?= $facilityLink ?? ''; ?>" aria-label="<?= $moreInfoLabel ?? ''; ?>">
         <img src="<?= $facilityPlaceholderImage ?? ''; ?>" alt="<?= $moreInfoLabel ?? ''; ?>" class="js-facility-image facility-image" />

@@ -17,7 +17,9 @@
   <?php endif; ?>
   <span class="js-navigation-status sr-only" role="status" aria-live="polite" data-status-placeholder="<?= $weekNaviStatusText; ?> {0}"></span>
   <?= $this->render('components/molecules/navigation/pagination/pager-with-label.phtml', ['wrapperClass' => 'js-week-navigation week-navigation week-navi-holder hide', 'prevButton' => ['class' => 'week-navigation-control js-prev-week', 'text' => $previousWeekLabel], 'label' => $weekText . ' <span class="js-week-number"></span>', 'nextButton' => ['class' => 'week-navigation-control js-next-week', 'text' => $nextWeekLabel]]) ?>
-  <?= $this->render('components/atoms/messaging/loader/loader.phtml', ['wrapperClass' => 'loader js-loader text-center']); ?>
+  <?= $this->render('components/molecules/messages/finna-spinner/finna-spinner.phtml', [
+      'attributes' => ['class' => ['loader', 'js-loader', 'text-center']]
+    ]); ?>
   <div class="js-opening-times-week opening-times-week"></div>
   <?= $this->render('components/molecules/messaging/status/status.phtml', ['alertText' => $informationNotAvailableText, 'alertClass' => 'finna-info-alert js-no-schedules js-hide-onload hide']); ?>
   <ul class="js-mobile-schedules mobile-schedules js-hide-onload hide"></ul>

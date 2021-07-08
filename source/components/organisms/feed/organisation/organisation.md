@@ -20,4 +20,4 @@ Feed component for displaying organisation RSS data in a grid layout.
 #### Child components
 
 - `molecules/messaging/alert/alert.phtml`
-- `atoms/messaging/loader/loader.phtml`
+- `molecules/messages/finna-spinner/finna-spinner.phtml`

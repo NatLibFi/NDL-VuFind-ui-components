@@ -1,6 +1,8 @@
 <div class="organisation-feed-wrapper <?= $wrapperClass; ?>">
   <?= $this->render('components/molecules/messaging/status/status.phtml', ['alertText' => $informationNotAvailableText, 'alertClass' => 'js-feed-alert hide']); ?>
-  <?= $this->render('components/atoms/messaging/loader/loader.phtml', ['wrapperClass' => 'js-loader']); ?>
+  <?= $this->render('components/molecules/messages/finna-spinner/finna-spinner.phtml', [
+      'attributes' => ['class' => 'js-loader']
+    ]); ?>
   <div class="organisation-feed js-feed-grid" data-rss-id="<?= $rssId; ?>" data-service-point-id="<?= $servicePointId; ?>" data-organisation="<?= $organisation; ?>">
   </div>
 </div>

@@ -17,6 +17,6 @@ A keywords component, used for both displaying and editing keywords/tags related
 
 #### Child components
 
-- `atoms/messaging/loader/loader.phtml`
+- `molecules/messages/finna-spinner/finna-spinner.phtml`
 - `molecules/messaging/in-testing-alert/in-testing-alert.phtml`
 - `molecules/forms/add-keyword/add-keyword.phtml`

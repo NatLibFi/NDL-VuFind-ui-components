@@ -22,4 +22,4 @@ Service point information block component.
 
 #### Child components
 
-- `molecules/atoms/messaging/loader/loader.phtml`
+- `molecules/messages/finna-spinner/finna-spinner.phtml`

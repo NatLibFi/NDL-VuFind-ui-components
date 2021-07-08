@@ -28,7 +28,7 @@ Service point schedule component, for displaying weekly opening times.
 
 #### Child components
 
-- `atoms/messaging/loader/loader.phtml`
+- `molecules/messages/finna-spinner/finna-spinner.phtml`
 - `molecules/messaging/alert/alert.phtml`
 - `molecules/navigation/dropdowns/sort.phtml`
 - `molecules/navigation/pagination/pager-with-label.phtml`

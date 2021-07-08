@@ -41,6 +41,6 @@ Service point schedule widget, for displaying service point weekly schedules and
 
 #### Child components
 
-- `atoms/messaging/loader/loader.phtml`
+- `molecules/messages/finna-spinner/finna-spinner.phtml`
 - `molecules/tooltips/finna-tooltip-btn/finna-tooltip-btn.phtml`
 - `molecules/scheduling/service-point-schedule/service-point-schedule.phtml`
